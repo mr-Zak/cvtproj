@@ -1,0 +1,46 @@
+.friends
+    width: 493px
+    height: 280px
+    background: #ffffff
+    position: absolute
+    top: 18px
+    border-radius: 0px 5px 5px 5px
+    display: none
+    &-box
+        width: 483px
+        height: 260px
+        margin-top: 10px
+        display: flex
+        flex-wrap: wrap
+        overflow: auto
+        &::-webkit-scrollbar
+            width: 5px
+            background-color: #eeeeee
+        &::-webkit-scrollbar-thumb
+            background-color: #077cb3
+            border-radius: 5px
+.friend
+    width: 47%
+    height: 62px
+    margin: 15px 0 15px 10px
+    white-space: nowrap
+    overflow: hidden
+    &__photo
+        float: left
+        margin-right: 10px
+        width: 62px
+        height: 62px
+        border-radius: 5px
+    &__name
+        font-family: ArialMT
+        font-size: 15px
+        font-weight: 400
+        line-height: 21px
+        margin-bottom: 4px
+
+    &__city
+        display: block
+        color: #6f6f6f
+        font-family: "ArialMT"
+        font-size: 12px
+        font-weight: 400

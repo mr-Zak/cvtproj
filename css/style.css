@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #dfdfdf;
+}
+
+main {
+  position: absolute;
+  width: 487px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 155px);
+}
+
+#newinteresbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.8);
+  display: none;
+  z-index: 1000;
+}
+
+.newinteresborder {
+  width: 200px;
+  height: 100px;
+  background: #cdc8cd;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+}
+
+#newinteres {
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: calc(40% - 10px);
+  left: calc(50% - 85px);
+}
+
+.newintbutton {
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 50px);
+}
+
+.newinteresborder img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -25px;
+  top: -25px;
+}
+
+.navigate {
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 4px 4px 0 0;
+  font-family: ArialMT;
+  z-index: 1;
+  background: #ffffff;
+  color: #000000;
+}
+
+.navigate1 {
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 4px 4px 0 0;
+  font-family: ArialMT;
+  z-index: 1;
+  background: #1e69ac;
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/ArialMT.eot");
+  src: url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.user {
+  width: 493px;
+  height: 280px;
+  background: #ffffff;
+  border-radius: 0 5px 5px 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 0;
+  z-index: 100;
+  position: absolute;
+}
+
+.user-photo__push {
+  width: 132px;
+  height: 30px;
+  margin-left: 15px;
+  color: #ffffff;
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.43);
+  background: #e65900;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
+  border-radius: 4px;
+}
+
+.user-photo img {
+  width: 132px;
+  height: 169px;
+  border-radius: 5px;
+  margin: 15px 20px 6px 15px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.32);
+}
+
+.user-info__name {
+  color: #000000;
+  font-family: ArialMT;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 4px;
+}
+
+.user-info__city {
+  color: #757575;
+  font-family: ArialMT;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.user-info-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.user-info-box__data {
+  color: #000000;
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.user-info__interests {
+  display: block;
+  color: #000000;
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-top: 17px;
+}
+
+.user-info__interes {
+  color: #1574af;
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-decoration: none;
+  border: 1px solid #d5d5d5;
+  height: 25px;
+  padding: 0 3px;
+  border-radius: 3px;
+  margin-top: 3px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.user-info__interes:hover {
+  color: #000000;
+  background: #f3f3f3;
+}
+
+.user-info__interespush {
+  color: #1574af;
+  font-family: ArialMT;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  text-decoration: none;
+  border: 1px solid #d5d5d5;
+  height: 25px;
+  padding: 0 4px;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.user-info__interespush:hover {
+  color: #000000;
+  background: #f3f3f3;
+}
+
+#box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact1 {
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+  border: none;
+}
+
+#contact2 {
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000000;
+  border: none;
+}
+
+#contact3 {
+  color: #1574af;
+  text-decoration: underline;
+  font-family: ArialMT;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  border: none;
+}
+
+#newinteresbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.8);
+  display: none;
+}
+
+.newinteresborder {
+  width: 200px;
+  height: 100px;
+  background: #cdc8cd;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+}
+
+.newinteres {
+  width: 170px;
+  height: 20px;
+  position: absolute;
+  top: calc(40% - 10px);
+  left: calc(50% - 85px);
+}
+
+.newintbutton {
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 50px);
+}
+
+.friends {
+  width: 493px;
+  height: 280px;
+  background: #ffffff;
+  position: absolute;
+  top: 18px;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+}
+
+.friends-box {
+  width: 483px;
+  height: 260px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+}
+
+.friends-box::-webkit-scrollbar {
+  width: 5px;
+  background-color: #eeeeee;
+}
+
+.friends-box::-webkit-scrollbar-thumb {
+  background-color: #077cb3;
+  border-radius: 5px;
+}
+
+.friend {
+  width: 47%;
+  height: 62px;
+  margin: 15px 0 15px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.friend__photo {
+  float: left;
+  margin-right: 10px;
+  width: 62px;
+  height: 62px;
+  border-radius: 5px;
+}
+
+.friend__name {
+  font-family: ArialMT;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 4px;
+}
+
+.friend__city {
+  display: block;
+  color: #6f6f6f;
+  font-family: "ArialMT";
+  font-size: 12px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

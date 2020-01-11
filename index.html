@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <title>Задание Виталя Гора</title>
+</head>
+<body> 
+    <div id="newinteresbox" >
+        <div class="newinteresborder">
+            <img src="image/close.jpg" alt="Закрыть" id="close" onclick="interesoff()">
+            <input name="int" type="text" id="newinteres" placeholder="Введите новый интерес" value="">
+            <input name="int" type="submit" value="Добавить" class="newintbutton" onclick="intpush()">
+        </div>
+    </div>
+    <main>
+        <!--Переключение между профилем и списком друзей-->
+        <nav>
+            <a href="#" class="navigate" id="test1" onclick="func1()">Профиль</a>
+            <a href="#" class="navigate1" id="test" onclick="func()">Друзья пользователя</a>
+        </nav>
+        <!--Основная секция-->
+        <article class="user" id="user">
+            <!--Блок с фото-->
+            <div class="user-photo">
+                <img src="image/UserPic.jpg" alt="фото">
+                <button class="user-photo__push">Добавить в друзья</button>
+            </div>
+            <!--Блок основной информации о пользователе-->
+            <section class="user-info" data-tab="1">
+                <h2 class="user-info__name">Виталя Гора</h2>
+                <address class="user-info__city">г. Нижние Шахты</address>
+                <div class="user-info-box">
+                    <span class="user-info-box__data">Семейное положение</span>
+                    <input type="text" id="contact1" value="холост">
+                    <span class="user-info-box__data">Телефон</span>
+                    <input type="tel"  id="contact2" value="+7 (440) 554-32-12">
+                    <span class="user-info-box__data">E-mail</span>
+                    <input type="email" id="contact3" value="vitalya@gora.ru">   
+                </div>
+                <span class="user-info__interests">Интересы</span>
+                <div id="box">
+                    <a href="#" class="user-info__interes">музыка</a>
+                    <a href="#" class="user-info__interes">компьютеры</a>
+                    <a href="#" class="user-info__interes">радио</a>
+                    <a href="#" class="user-info__interespush" onclick="interes()">+</a>
+                </div>    
+            </section>
+        </article>
+        
+        <article class="friends" id="friends">
+            <div class="friends-box">
+                <section class="friend">
+                    <img src="image/Slice_1.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Лев Бронштейн</a>
+                    <address class="friend__city">г.Ханты-Мансийск</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_4.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Находка Капитал</a>
+                    <address class="friend__city">г.Усть-Бельск</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_2.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Яндекс Петренко</a>
+                    <address class="friend__city">г.Пермь</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_5.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Успех Возможностей</a>
+                    <address class="friend__city">г.Радонеж</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_3.png" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Инна Нашлась</a>
+                    <address class="friend__city">г.Омск</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_6.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Анна Подолбская</a>
+                    <address class="friend__city">г.Петропавловск-Комчатский</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_1.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Виталя Паленый</a>
+                    <address class="friend__city">г.Ялта</address>
+                </section>
+                <section class="friend">
+                    <img src="image/Slice_2.jpg" alt="фото" class="friend__photo">
+                    <a href="#" class="friend__name">Синий Бегемот</a>
+                    <address class="friend__city">г.Горький</address>
+                </section>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
