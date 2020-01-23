@@ -57,7 +57,22 @@ function func1() {
     elem2.style.color = '#ffffff';
     elem2.style.background = '#1e69ac';
     var user = document.getElementById('user');
-    user.style.display = 'grid';
+    var intbox = document.getElementsByClassName('user-info-box')[0];
     var friends = document.getElementById('friends');
     friends.style.display = 'none';
+}
+window.onresize = function(){
+    var intbox = document.getElementsByClassName('user-info-box')[0];
+    var user = document.getElementById('user');
+    if (document.documentElement.clientWidth < 451) {
+        intbox.style.display = 'flex';
+        
+    } else {
+        intbox.style.display = 'grid';
+    }
+    if (document.documentElement.clientWidth < 661) {
+        user.style.display = 'block';
+    } else {user.style.display = 'grid';
+    }
+    func1();
 }
